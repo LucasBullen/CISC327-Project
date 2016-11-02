@@ -37,7 +37,7 @@ public class Main {
 		String inputString;
 		// This is used to handle the case where we generate multiple TSF files.
 		// The naming scheme is TSF.txt, TSF2.txt, TSF3.txt, ...
-		Integer tsfVersion = 0;
+		Integer tsfVersion = 1;
 
 		for (;;) {
 			inputString = scan.nextLine();

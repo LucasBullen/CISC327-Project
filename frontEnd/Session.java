@@ -30,7 +30,7 @@ class Session {
 		this.scan = scan;
 		accountsList = new ValidAccountsList(valName + ".txt");
 		sessionWithdraw = new HashMap<String, Integer>();
-		if (tsfVersion.equals(0)) {
+		if (tsfVersion.equals(1)) {
 			tsf = new TSF(tsfName + ".txt");
 		} else {
 			tsf = new TSF(tsfName + tsfVersion + ".txt");
