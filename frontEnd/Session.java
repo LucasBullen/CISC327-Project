@@ -176,7 +176,7 @@ class Session {
 		if (!checkAccountNumber(inputString, "")) {
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account does not exists. Delete cancelled.");
+			System.out.println("Account does not exist. Delete cancelled.");
 			return;
 		}
 		accountNumber = inputString;

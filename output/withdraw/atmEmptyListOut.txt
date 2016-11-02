@@ -1,5 +1,4 @@
 Select mode: atm or agent.
-Error: java.nio.file.NoSuchFileException: accountsEmpty.txt
 Logged into atm mode.
 Enter account number to withdraw from.
 Account doesn't exists. Withdraw cancelled.
