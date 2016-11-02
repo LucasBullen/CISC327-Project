@@ -1,8 +1,0 @@
-2c2
-< Logged into agent mode.
----
-> Logged into atm mode.
-4c4
-< Account does not exists. Delete cancelled.
----
-> Account does not exist. Delete cancelled.

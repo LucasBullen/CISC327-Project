@@ -1,4 +1,0 @@
-Select mode: atm or agent.
-Logged into atm mode.
-Cannot access create feature in atm mode.
-Logged out.

@@ -1,5 +1,0 @@
-Select mode: atm or agent.
-Logged into agent mode.
-Enter first account number.
-Account doesn't exist. Transfer cancelled.
-Logged out.

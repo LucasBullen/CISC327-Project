@@ -1,4 +1,0 @@
-4c4
-< Account does not exists. Deposit cancelled.
----
-> Account does not exist. Deposit cancelled.

@@ -6,5 +6,5 @@ Deposit successful.
 Enter number of account to deposit into.
 Enter number of account to transfer to.
 Enter amount (in cents) to transfer.
-Trasfer successful.
+Transfer successful.
 Logged out.
