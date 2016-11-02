@@ -18,11 +18,11 @@ for testTypeDir in *; do
 			rm ${inputFile:0:${#inputFile} - 6}TSF*.txt
 			#output created
 			#expected output comparing
-			diff ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt ../expectedOutput/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt > ../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+			diff -w ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt ../expectedOutput/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt > ../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
 
 			cd ../TSF/$testTypeDir
 			for TSF in *; do
-				diff $TSF ../../expectedTSF/$testTypeDir/$TSF > ../../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}TSF.txt
+				diff -w $TSF ../../expectedTSF/$testTypeDir/$TSF > ../../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}TSF.txt
 			done
 
 			cd ../../failedTests/$testTypeDir

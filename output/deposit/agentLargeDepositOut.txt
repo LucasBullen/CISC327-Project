@@ -1,6 +1,0 @@
-Select mode: atm or agent.
-Logged into agent mode.
-Enter account number to deposit to.
-Enter amount to deposit.
-Deposit successful.
-Logged out.

@@ -1,6 +1,0 @@
-4,5c4,5
-< Enter amount to withdraw.
-< Incorrect amount format. Withdraw cancelled.
----
-> Enter amount (in cents) to withdraw.
-> Withdraw above $999,999.99 limit. Withdraw cancelled.

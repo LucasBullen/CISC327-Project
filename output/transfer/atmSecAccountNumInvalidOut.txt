@@ -1,6 +1,0 @@
-Select mode: atm or agent.
-Logged into atm mode.
-Enter first account number.
-Enter second account number.
-Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
-Logged out.

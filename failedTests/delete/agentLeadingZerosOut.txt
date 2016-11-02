@@ -1,8 +1,0 @@
-2c2
-< Logged into agent mode.
----
-> Logged into atm mode.
-4c4
-< Incorrect account number format (8 digits, no leading zeros). Delete cancelled.
----
-> Incorrect account number format (8 digits, no leading zeros).
