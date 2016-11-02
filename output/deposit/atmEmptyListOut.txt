@@ -1,0 +1,5 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Enter account number to deposit to.
+Account doesn't exists. Deposit cancelled.
+Logged out.

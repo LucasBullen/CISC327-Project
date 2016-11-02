@@ -1,0 +1,8 @@
+4c4
+< Enter amount to withdraw.
+---
+> Enter amount (in cents) to withdraw.
+7c7
+< Enter amount to withdraw.
+---
+> Enter amount (in cents) to withdraw.

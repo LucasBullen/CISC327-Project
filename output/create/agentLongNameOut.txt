@@ -1,0 +1,6 @@
+Select mode: atm or agent.
+Logged into agent mode.
+Enter account number to create.
+Enter name of new account.
+Incorrect account name format. Create cancelled.
+Logged out.

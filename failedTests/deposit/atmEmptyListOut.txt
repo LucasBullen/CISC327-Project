@@ -1,0 +1,6 @@
+3,4c3,4
+< Enter account number to deposit to.
+< Account doesn't exists. Deposit cancelled.
+---
+> Enter number of account to deposit into.
+> Account does not exist. Deposit cancelled.

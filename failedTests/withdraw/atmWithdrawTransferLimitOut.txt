@@ -1,0 +1,14 @@
+2c2
+< Logged into atm mode.
+---
+> Logged into agent mode.
+4c4
+< Enter amount to withdraw.
+---
+> Enter amount (in cents) to withdraw.
+7,8c7,8
+< Enter amount to withdraw.
+< Session withdraw maximum exceeded. Withdraw cancelled.
+---
+> Enter amount (in cents) to withdraw.
+> Withdraw above $1000.00 session limit. Withdraw cancelled.

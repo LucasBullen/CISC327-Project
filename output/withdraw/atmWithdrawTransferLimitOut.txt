@@ -1,0 +1,9 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Enter account number to withdraw from.
+Enter amount to withdraw.
+Withdraw successful.
+Enter account number to withdraw from.
+Enter amount to withdraw.
+Session withdraw maximum exceeded. Withdraw cancelled.
+Logged out.

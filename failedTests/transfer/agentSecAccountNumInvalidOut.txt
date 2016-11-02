@@ -1,0 +1,8 @@
+3,5c3,5
+< Enter first account number.
+< Enter second account number.
+< Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
+---
+> Enter number of account to deposit into.
+> Enter number of account to transfer to.
+> Account number does not exist. Transfer cancelled.

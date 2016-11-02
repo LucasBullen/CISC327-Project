@@ -1,0 +1,24 @@
+3,4c3,4
+< Enter account number to deposit to.
+< Enter amount to deposit.
+---
+> Enter number of account to deposit into.
+> Enter amount (in cents) to deposit.
+9,16c9,16
+< Enter first account number.
+< Enter second account number.
+< Enter amount to transfer.
+< Transfer successful.
+< Enter first account number.
+< Enter second account number.
+< Enter amount to transfer.
+< Session withdraw maximum exceeded. Transfer cancelled.
+---
+> Enter number of account to transfer from.
+> Enter number of account to transfer to.
+> Enter amount (in cents) to transfer.
+> Trasfer successful.
+> Enter number of account to transfer from.
+> Enter number of account to transfer to.
+> Enter amount (in cents) to transfer.
+> Transfer above $1000.00 limit. Transfer cancelled.
