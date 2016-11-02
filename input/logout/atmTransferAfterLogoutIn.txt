@@ -1,0 +1,6 @@
+login
+atm
+logout
+transfer
+quit
+

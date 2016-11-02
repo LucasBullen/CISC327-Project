@@ -1,0 +1,23 @@
+2,6c2,5
+< Logged into agent mode.
+< Enter account number to create.
+< Incorrect account number format (8 digits, no leading zeros). Create cancelled.
+< Unrecognized command. Remember all commands must be in lowercase.
+< Unrecognized command. Remember all commands must be in lowercase.
+---
+> Logged into atm mode.
+> Cannot access create feature in atm mode.
+> Enter amount (in cents) to deposit.
+> Deposit successful.
+8c7
+< Enter amount to withdraw.
+---
+> Enter amount (in cents) to withdraw.
+10,13c9,10
+< Enter account number to delete.
+< Incorrect account number format (8 digits, no leading zeros). Delete cancelled.
+< Unrecognized command. Remember all commands must be in lowercase.
+< Unrecognized command. Remember all commands must be in lowercase.
+---
+> Cannot access delete feature in atm mode.
+> Logged out.

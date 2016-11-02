@@ -1,0 +1,10 @@
+login
+agent
+delete
+12345678
+user
+deposit
+12345678
+logout
+quit
+

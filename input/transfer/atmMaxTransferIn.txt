@@ -1,0 +1,12 @@
+login
+atm
+deposit
+12345678
+100000
+transfer
+12345678
+87654321
+100000
+logout
+quit
+

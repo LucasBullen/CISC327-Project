@@ -1,0 +1,8 @@
+login
+agent
+withdraw
+12345678
+99999999
+logout
+quit
+

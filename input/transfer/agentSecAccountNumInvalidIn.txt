@@ -1,0 +1,8 @@
+login
+agent
+transfer
+12345678
+jbfalsfna
+logout
+quit
+

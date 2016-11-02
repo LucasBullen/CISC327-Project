@@ -1,0 +1,16 @@
+1,7c1,7
+< Select mode: atm or agent.
+< Logged into agent mode.
+< Enter first account number.
+< Enter second account number.
+< Enter amount to transfer.
+< Incorrect amount format. Transfer cancelled.
+< Logged out.
+---
+> Select mode: atm or agent.
+> Logged into agent mode.
+> Enter number of account to deposit into.
+> Enter number of account to transfer to.
+> Enter amount (in cents) to transfer.
+> Transfer above $999,999.99 limit. Transfer cancelled.
+> Logged out.

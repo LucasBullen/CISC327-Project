@@ -1,0 +1,4 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Cannot access delete feature in atm mode.
+Logged out.

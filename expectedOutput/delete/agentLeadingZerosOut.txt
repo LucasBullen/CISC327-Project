@@ -1,0 +1,5 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Enter account number to delete.
+Incorrect account number format (8 digits, no leading zeros).
+Logged out.

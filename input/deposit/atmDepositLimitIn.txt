@@ -1,0 +1,8 @@
+login
+atm
+deposit
+12345678
+100001
+logout
+quit
+

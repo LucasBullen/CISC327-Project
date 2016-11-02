@@ -1,0 +1,14 @@
+1,6c1,6
+< Select mode: atm or agent.
+< Logged into atm mode.
+< Enter first account number.
+< Enter second account number.
+< Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
+< Logged out.
+---
+> Select mode: atm or agent.
+> Logged into atm mode.
+> Enter number of account to transfer from.
+> Enter number of account to transfer to.
+> Account number does not exist. Transfer cancelled.
+> Logged out.

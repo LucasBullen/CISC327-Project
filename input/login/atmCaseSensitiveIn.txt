@@ -1,0 +1,4 @@
+login
+ATM
+quit
+

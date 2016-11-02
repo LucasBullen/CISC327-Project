@@ -1,0 +1,6 @@
+4,5c4,5
+< Enter amount to withdraw.
+< Limit exceeded. Withdraw cancelled.
+---
+> Enter amount (in cents) to withdraw.
+> Withdraw above $1000.00 limit. Withdraw cancelled.

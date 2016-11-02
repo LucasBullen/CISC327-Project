@@ -1,0 +1,12 @@
+1,5c1,5
+< Select mode: atm or agent.
+< Logged into agent mode.
+< Enter account number to create.
+< Incorrect account number format (8 digits, no leading zeros). Create cancelled.
+< Logged out.
+---
+> Select mode: atm or agent.
+> Logged into agent mode.
+> Enter account number to create.
+> Incorrect account number format (8 digits, no leading zeros). Create cancelled.
+> Logged out.

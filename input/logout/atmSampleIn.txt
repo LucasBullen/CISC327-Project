@@ -1,0 +1,13 @@
+login
+agent
+create
+deposit
+12345678
+1000
+withdraw
+12345678
+500
+delete
+logout
+quit
+

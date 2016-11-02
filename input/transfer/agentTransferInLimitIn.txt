@@ -1,0 +1,16 @@
+login
+agent
+deposit
+12345678
+100001
+transfer
+12345678
+87654321
+60000
+transfer
+12345678
+87654321
+40001
+logout
+quit
+

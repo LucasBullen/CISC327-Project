@@ -1,0 +1,5 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Cannot access create feature in atm mode.
+Unrecognized command. Remember all commands must be in lowercase.
+Unrecognized command. Remember all commands must be in lowercase.

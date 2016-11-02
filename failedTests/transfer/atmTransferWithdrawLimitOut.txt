@@ -1,0 +1,36 @@
+1,17c1,17
+< Select mode: atm or agent.
+< Logged into agent mode.
+< Enter account number to deposit to.
+< Enter amount to deposit.
+< Deposit successful.
+< Logged out.
+< Select mode: atm or agent.
+< Logged into atm mode.
+< Enter first account number.
+< Enter second account number.
+< Enter amount to transfer.
+< Transfer successful.
+< Enter first account number.
+< Enter second account number.
+< Enter amount to transfer.
+< Session withdraw maximum exceeded. Transfer cancelled.
+< Logged out.
+---
+> Select mode: atm or agent.
+> Logged into agent mode.
+> Enter number of account to deposit into.
+> Enter amount (in cents) to deposit.
+> Deposit successful.
+> Logged out.
+> Select mode: atm or agent.
+> Logged into atm mode.
+> Enter number of account to transfer from.
+> Enter number of account to transfer to.
+> Enter amount (in cents) to transfer.
+> Trasfer successful.
+> Enter number of account to transfer from.
+> Enter number of account to transfer to.
+> Enter amount (in cents) to transfer.
+> Transfer above $1000.00 limit. Transfer cancelled.
+> Logged out.

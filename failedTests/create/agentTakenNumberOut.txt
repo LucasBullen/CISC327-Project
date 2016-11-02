@@ -1,0 +1,12 @@
+1,5c1,5
+< Select mode: atm or agent.
+< Logged into agent mode.
+< Enter account number to create.
+< Account already exists. Create cancelled.
+< Logged out.
+---
+> Select mode: atm or agent.
+> Logged into agent mode.
+> Enter account number to create.
+> Account already exists. Create cancelled.
+> Logged out.

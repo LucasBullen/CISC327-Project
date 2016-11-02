@@ -1,0 +1,10 @@
+1,4c1,4
+< Select mode: atm or agent.
+< Logged into atm mode.
+< Cannot access create feature in atm mode.
+< Logged out.
+---
+> Select mode: atm or agent.
+> Logged into atm mode.
+> Cannot access create feature in atm mode.
+> Logged out.

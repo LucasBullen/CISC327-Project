@@ -1,0 +1,6 @@
+4,5c4,5
+< Enter amount to withdraw.
+< Incorrect amount format. Withdraw cancelled.
+---
+> Enter amount (in cents) to withdraw.
+> Amount is not a proper number. Withdraw cancelled.

@@ -1,0 +1,10 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Cannot access create feature in atm mode.
+Enter amount (in cents) to deposit.
+Deposit successful.
+Enter account number to withdraw from.
+Enter amount (in cents) to withdraw.
+Withdraw successful.
+Cannot access delete feature in atm mode.
+Logged out.

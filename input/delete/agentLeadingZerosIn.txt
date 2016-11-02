@@ -1,0 +1,7 @@
+login
+agent
+delete
+02345678
+logout
+quit
+

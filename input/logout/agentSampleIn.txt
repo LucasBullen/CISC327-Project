@@ -1,0 +1,17 @@
+login
+agent
+create
+99999999
+test
+deposit
+12345678
+1000
+withdraw
+12345678
+500
+delete
+12345678
+test
+logout
+quit
+
