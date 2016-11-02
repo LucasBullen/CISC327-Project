@@ -1,5 +1,0 @@
-Select mode: atm or agent.
-Logged into agent mode.
-Enter account number to withdraw from.
-Account does not exists. Withdraw cancelled.
-Logged out.

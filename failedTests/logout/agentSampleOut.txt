@@ -1,4 +1,0 @@
-5d4
-< Account successfully created. Will update after synchronizing with Back Office.
-6a6
-> Account successfully created. Will update after synchronizing with Back Office.

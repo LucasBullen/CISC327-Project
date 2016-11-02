@@ -258,7 +258,7 @@ class Session {
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account does not exists. Withdraw cancelled.");
+			System.out.println("Account does not exist. Withdraw cancelled.");
 			return;
 		}
 
@@ -272,7 +272,7 @@ class Session {
 				System.out.println("Withdraw above $999,999.99 limit. " + failedText);
 				return;
 			}else if (user.equals("atm") && Integer.parseInt(inputString) > 100000){
-				System.out.println("Withdraw above $1,000.00 limit. " + failedText);
+				System.out.println("Withdraw above $1000.00 limit. " + failedText);
 				return;
 			}
 		}
@@ -334,6 +334,17 @@ class Session {
 		accountNumberTwo = inputString;
 		System.out.println("Enter amount (in cents) to transfer.");
 		inputString = scan.nextLine();
+
+		String regexIsNumber = "\\d*";
+		if(inputString.matches(regexIsNumber)){
+			if (user.equals("agent") && Integer.parseInt(inputString) > 99999999){
+				System.out.println("Transfer above $999,999.99 limit. " + failedText);
+				return;
+			}else if (user.equals("atm") && Integer.parseInt(inputString) > 100000){
+				System.out.println("Transfer above $1000.00 limit. " + failedText);
+				return;
+			}
+		}
 
 		if (!checkAmount(inputString, failedText)){
 			return;

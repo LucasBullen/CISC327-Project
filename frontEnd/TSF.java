@@ -52,7 +52,7 @@ class TSF {
 	* @param amount         the amount in cents to transfer
 	*/
 	public void logTransfer(String accountNumber1, String accountNumber2, String amount) {
-		info.add(String.format("TR %s %s 000 %s", accountNumber1, accountNumber2, amount));
+		info.add(String.format("TR %s %s %s 000", accountNumber1, accountNumber2, amount));
 	}
 
 	/**

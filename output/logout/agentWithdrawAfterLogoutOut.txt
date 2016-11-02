@@ -1,4 +1,0 @@
-Select mode: atm or agent.
-Logged into agent mode.
-Logged out.
-Unrecognized command. Remember all commands must be in lowercase.
