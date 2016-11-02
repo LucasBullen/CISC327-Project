@@ -1,4 +1,0 @@
-6c6
-< Amount is not a proper number. Transfer cancelled.
----
-> Transfer above $999,999.99 limit. Transfer cancelled.

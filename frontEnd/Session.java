@@ -88,7 +88,7 @@ class Session {
 			System.out.println("Amount is not a proper number. " + addText);
 			return false;
 		}  else if (user.equals("atm") && Integer.parseInt(inputString) > 100000) {
-			System.out.println("Limit exceeded. " + addText);
+			System.out.println("Withdraw above $1000.00 limit. " + addText);
 			return false;
 		}
 		return true;
@@ -247,12 +247,12 @@ class Session {
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account doesn't exists. Withdraw cancelled.");
+			System.out.println("Account does not exists. Withdraw cancelled.");
 			return;
 		}
 
 		accountNumber = inputString;
-		System.out.println("Enter amount to withdraw.");
+		System.out.println("Enter amount (in cents) to withdraw.");
 		inputString = scan.nextLine();
 
 		if (!checkAmount(inputString, failedText)){
@@ -266,7 +266,7 @@ class Session {
 		}
 
 		if (user.equals("atm") && newSessionWithdraw > 100000) {
-			System.out.println("Session withdraw maximum exceeded. Withdraw cancelled.");
+			System.out.println("Withdraw above $1000.00 session limit. Withdraw cancelled.");
 			return;
 		}
 
