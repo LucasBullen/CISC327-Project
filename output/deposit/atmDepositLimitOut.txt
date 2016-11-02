@@ -1,6 +1,6 @@
 Select mode: atm or agent.
 Logged into atm mode.
-Enter account number to deposit to.
-Enter amount to deposit.
+Enter number of account to deposit into.
+Enter amount(in cents) to deposit.
 Limit exceeded. Deposit cancelled.
 Logged out.

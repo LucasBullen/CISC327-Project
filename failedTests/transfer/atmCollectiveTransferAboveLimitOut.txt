@@ -1,9 +1,3 @@
-3,4c3,4
-< Enter account number to deposit to.
-< Enter amount to deposit.
----
-> Enter number of account to deposit into.
-> Enter amount (in cents) to deposit.
 9,16c9,17
 < Enter first account number.
 < Enter second account number.

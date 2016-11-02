@@ -1,10 +1,7 @@
-4a5
-> Enter number of account to deposit into.
-6,7c7
-< Enter account number to deposit to.
-< Enter amount to deposit.
----
-> Enter amount (in cents) to deposit.
+5d4
+< Account successfully created. Will update after synchronizing with Back Office.
+6a6
+> Account successfully created. Will update after synchronizing with Back Office.
 10c10
 < Enter amount to withdraw.
 ---

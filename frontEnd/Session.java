@@ -182,7 +182,7 @@ class Session {
 		accountNumber = inputString;
 		System.out.println("Enter name of account to delete.");
 		inputString = scan.nextLine();
-		if (!checkAccountName(inputString, faifledText)) {
+		if (!checkAccountName(inputString, failedText)) {
 			return;
 		}
 		accountName = inputString;

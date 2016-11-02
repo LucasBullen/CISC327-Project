@@ -3,6 +3,6 @@
 ---
 > Logged into atm mode.
 4c4
-< Account doesn't exists. Delete cancelled.
+< Account does not exists. Delete cancelled.
 ---
 > Account does not exist. Delete cancelled.

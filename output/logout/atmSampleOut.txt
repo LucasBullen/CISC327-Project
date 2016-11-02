@@ -8,6 +8,6 @@ Enter account number to withdraw from.
 Enter amount to withdraw.
 Withdraw successful.
 Enter account number to delete.
-Incorrect account number format (8 digits, no leading zeros). Delete cancelled.
+Incorrect account number format (8 digits, no leading zeros). 
 Unrecognized command. Remember all commands must be in lowercase.
 Unrecognized command. Remember all commands must be in lowercase.

@@ -1,6 +1,4 @@
-3,4c3,4
-< Enter account number to deposit to.
+4c4
 < Incorrect account number format (8 digits, no leading zeros). Deposit cancelled.
 ---
-> Enter number of account to deposit into.
 > Amount is not a proper number. Deposit cancelled.

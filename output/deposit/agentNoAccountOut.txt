@@ -1,5 +1,5 @@
 Select mode: atm or agent.
 Logged into agent mode.
-Enter account number to deposit to.
+Enter number of account to deposit into.
 Incorrect account number format (8 digits, no leading zeros). Deposit cancelled.
 Logged out.

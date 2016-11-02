@@ -1,7 +1,7 @@
 Select mode: atm or agent.
 Logged into agent mode.
-Enter account number to deposit to.
-Enter amount to deposit.
+Enter number of account to deposit into.
+Enter amount(in cents) to deposit.
 Deposit successful.
 Logged out.
 Select mode: atm or agent.

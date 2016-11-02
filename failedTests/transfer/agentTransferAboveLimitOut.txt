@@ -2,7 +2,7 @@
 < Enter first account number.
 < Enter second account number.
 < Enter amount to transfer.
-< Incorrect amount format. Transfer cancelled.
+< Amount is not a proper number. Transfer cancelled.
 ---
 > Enter number of account to deposit into.
 > Enter number of account to transfer to.

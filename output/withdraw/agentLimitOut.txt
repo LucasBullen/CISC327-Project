@@ -2,5 +2,5 @@ Select mode: atm or agent.
 Logged into agent mode.
 Enter account number to withdraw from.
 Enter amount to withdraw.
-Incorrect amount format. Withdraw cancelled.
+Amount is not a proper number. Withdraw cancelled.
 Logged out.
