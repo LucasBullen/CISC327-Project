@@ -20,12 +20,7 @@ for testTypeDir in *; do
 			#expected output comparing
 			diff -w ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt ../expectedOutput/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt > ../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
 
-			cd ../TSF/$testTypeDir
-			for TSF in *; do
-				diff -w $TSF ../../expectedTSF/$testTypeDir/$TSF > ../../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}TSF.txt
-			done
-
-			cd ../../failedTests/$testTypeDir
+			cd ../failedTests/$testTypeDir
 		else
 			cd ../failedTests/$testTypeDir
 		fi
@@ -35,5 +30,11 @@ for testTypeDir in *; do
 		#expected output comared
 		cd ../../input/$testTypeDir
 	done
-	cd ../
+	cd ../../TSF/$testTypeDir
+	for TSF in *; do
+		diff -w $TSF ../../expectedTSF/$testTypeDir/$TSF > ../../failedTests/$testTypeDir/$TSF
+	done
+	cd ../../failedTests/$testTypeDir
+	find . -size 0 -delete
+	cd ../../input/
 done

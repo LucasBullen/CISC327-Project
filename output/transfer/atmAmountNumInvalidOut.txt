@@ -1,7 +1,0 @@
-Select mode: atm or agent.
-Logged into atm mode.
-Enter first account number.
-Enter second account number.
-Enter amount to transfer.
-Amount is not a proper number. Transfer cancelled.
-Logged out.

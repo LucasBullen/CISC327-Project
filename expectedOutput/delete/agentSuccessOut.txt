@@ -1,5 +1,5 @@
 Select mode: atm or agent.
-Logged into atm mode.
+Logged into agent mode.
 Enter account number to delete.
 Enter name of account to delete.
 Account successfully deleted.

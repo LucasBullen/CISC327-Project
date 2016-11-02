@@ -4,4 +4,3 @@ delete
 02345678
 logout
 quit
-

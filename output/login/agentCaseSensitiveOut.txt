@@ -1,2 +1,0 @@
-Select mode: atm or agent.
-Unrecognized mode. Login cancelled.

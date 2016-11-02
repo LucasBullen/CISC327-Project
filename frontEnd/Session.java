@@ -212,7 +212,7 @@ class Session {
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account does not exists. Deposit cancelled.");
+			System.out.println("Account does not exist. Deposit cancelled.");
 			return;
 		}
 

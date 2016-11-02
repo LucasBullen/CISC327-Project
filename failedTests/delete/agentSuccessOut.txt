@@ -1,4 +1,0 @@
-2c2
-< Logged into agent mode.
----
-> Logged into atm mode.
