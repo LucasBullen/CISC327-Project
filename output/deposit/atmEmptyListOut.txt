@@ -1,7 +1,5 @@
 Select mode: atm or agent.
 Logged into atm mode.
 Enter account number to deposit to.
-Enter amount to deposit.
-Incorrect amount format. Deposit cancelled.
-Unrecognized command. Remember all commands must be in lowercase.
-Unrecognized command. Remember all commands must be in lowercase.
+Account doesn't exists. Deposit cancelled.
+Logged out.

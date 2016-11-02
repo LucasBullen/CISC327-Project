@@ -7,7 +7,12 @@ for testTypeDir in *; do
 		#output creating
 		echo "running test $inputFile"
 		cd ../../frontEnd
-		java Main accounts TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+		if grep -Fxq "${inputFile:0:${#inputFile} - 6}" testWithEmptyAccounts.txt
+		then
+		    java Main accountsEmpty TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+		else
+			java Main accounts TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+		fi
 		#output created
 		#expected output comparing
 		diff ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt ../expectedOutput/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt > ../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt

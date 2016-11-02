@@ -1,8 +1,4 @@
-4,7c4,5
-< Enter amount to withdraw.
-< Incorrect amount format. Withdraw cancelled.
-< Unrecognized command. Remember all commands must be in lowercase.
-< Unrecognized command. Remember all commands must be in lowercase.
+4c4
+< Account doesn't exists. Withdraw cancelled.
 ---
 > Account does not exist. Withdraw cancelled.
-> Logged out.

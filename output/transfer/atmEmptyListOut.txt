@@ -1,7 +1,5 @@
 Select mode: atm or agent.
 Logged into atm mode.
 Enter first account number.
-Enter second account number.
-Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
-Unrecognized command. Remember all commands must be in lowercase.
-Unrecognized command. Remember all commands must be in lowercase.
+Account doesn't exist. Transfer cancelled.
+Logged out.
