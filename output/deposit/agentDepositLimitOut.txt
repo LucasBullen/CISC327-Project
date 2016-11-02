@@ -1,0 +1,6 @@
+Select mode: atm or agent.
+Logged into agent mode.
+Enter number of account to deposit into.
+Enter amount(in cents) to deposit.
+Deposit above $999,999.99 limit. Deposit cancelled.
+Logged out.

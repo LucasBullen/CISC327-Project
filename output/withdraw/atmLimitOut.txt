@@ -1,0 +1,6 @@
+Select mode: atm or agent.
+Logged into atm mode.
+Enter account number to withdraw from.
+Enter amount (in cents) to withdraw.
+Withdraw above $1,000.00 limit. Withdraw cancelled.
+Logged out.

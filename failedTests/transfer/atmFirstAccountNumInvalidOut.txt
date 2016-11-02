@@ -1,0 +1,6 @@
+3,4c3,4
+<  Enter number of account to deposit into.
+< Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
+---
+> Enter number of account to transfer from.
+> Account number does not exist. Transfer cancelled.
