@@ -289,28 +289,28 @@ class Session {
 		String accountNumberTwo = "";
 		String transferAmount = "";
 
-		System.out.println("Enter first account number.");
+		System.out.println(" Enter number of account to deposit into.");
 		inputString = scan.nextLine();
 
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account doesn't exist. Transfer cancelled.");
+			System.out.println("Account does not exist. Transfer cancelled.");
 			return;
 		}
 		accountNumberOne = inputString;
-		System.out.println("Enter second account number.");
+		System.out.println("Enter number of account to transfer to.");
 		inputString = scan.nextLine();
 
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account doesn't exist. Transfer cancelled.");
+			System.out.println("Account does not exist. Transfer cancelled.");
 			return;
 		}
 
 		accountNumberTwo = inputString;
-		System.out.println("Enter amount to transfer.");
+		System.out.println("Enter amount (in cents) to transfer.");
 		inputString = scan.nextLine();
 
 		if (!checkAmount(inputString, failedText)){

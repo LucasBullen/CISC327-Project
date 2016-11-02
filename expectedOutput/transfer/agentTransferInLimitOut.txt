@@ -3,11 +3,11 @@ Logged into agent mode.
 Enter number of account to deposit into.
 Enter amount (in cents) to deposit.
 Deposit successful.
-Enter number of account to transfer from.
+Enter number of account to deposit into.
 Enter number of account to transfer to.
 Enter amount (in cents) to transfer.
 Trasfer successful.
-Enter number of account to transfer from.
+Enter number of account to deposit into.
 Enter number of account to transfer to.
 Enter amount (in cents) to transfer.
 Trasfer successful.
