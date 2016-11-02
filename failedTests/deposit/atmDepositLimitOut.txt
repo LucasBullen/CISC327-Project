@@ -1,0 +1,4 @@
+5c5
+< Limit exceeded. Deposit cancelled.
+---
+> Deposit above $1000.00 limit. Deposit cancelled.

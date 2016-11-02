@@ -1,0 +1,4 @@
+5c5
+< Amount is not a proper number. Deposit cancelled.
+---
+> Deposit above $999,999.99 limit. Deposit cancelled.

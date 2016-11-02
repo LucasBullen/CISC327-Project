@@ -1,0 +1,4 @@
+4c4
+< Incorrect account number format (8 digits, no leading zeros). Deposit cancelled.
+---
+> Account does not exist. Deposit cancelled.

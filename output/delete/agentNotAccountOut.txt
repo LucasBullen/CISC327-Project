@@ -1,0 +1,5 @@
+Select mode: atm or agent.
+Logged into agent mode.
+Enter account number to delete.
+Account does not exists. Delete cancelled.
+Logged out.

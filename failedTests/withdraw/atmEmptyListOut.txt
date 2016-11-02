@@ -1,0 +1,6 @@
+2d1
+< Error: java.nio.file.NoSuchFileException: accountsEmpty.txt
+5c4
+< Account doesn't exists. Withdraw cancelled.
+---
+> Account does not exist. Withdraw cancelled.

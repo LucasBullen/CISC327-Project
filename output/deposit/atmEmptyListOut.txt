@@ -1,0 +1,6 @@
+Select mode: atm or agent.
+Error: java.nio.file.NoSuchFileException: accountsEmpty.txt
+Logged into atm mode.
+Enter number of account to deposit into.
+Account does not exist. Deposit cancelled.
+Logged out.

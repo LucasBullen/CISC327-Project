@@ -1,0 +1,8 @@
+5d4
+< Account successfully created. Will update after synchronizing with Back Office.
+6a6
+> Account successfully created. Will update after synchronizing with Back Office.
+10c10
+< Enter amount to withdraw.
+---
+> Enter amount (in cents) to withdraw.
