@@ -9,16 +9,29 @@ for testTypeDir in *; do
 		cd ../../frontEnd
 		if grep -Fxq "${inputFile:0:${#inputFile} - 6}" testWithEmptyAccounts.txt
 		then
-		    java Main accountsEmpty TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+		    java Main accountsEmpty ${inputFile:0:${#inputFile} - 6}TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
 		else
-			java Main accounts TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+			java Main accounts ${inputFile:0:${#inputFile} - 6}TSF < ../input/$testTypeDir/$inputFile > ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
 		fi
-		#output created
-		#expected output comparing
-		diff ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt ../expectedOutput/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt > ../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
-		#diff ../outputs/$i.log ../expected/$i.log >
-		cd ../failedTests/$testTypeDir
+		if [ -f ${inputFile:0:${#inputFile} - 6}TSF.txt ] ; then
+			cp ${inputFile:0:${#inputFile} - 6}TSF*.txt ../TSF/$testTypeDir/
+			rm ${inputFile:0:${#inputFile} - 6}TSF*.txt
+			#output created
+			#expected output comparing
+			diff ../output/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt ../expectedOutput/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt > ../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}Out.txt
+
+			cd ../TSF/$testTypeDir
+			for TSF in *; do
+				diff $TSF ../../expectedTSF/$testTypeDir/$TSF > ../../failedTests/$testTypeDir/${inputFile:0:${#inputFile} - 6}TSF.txt
+			done
+
+			cd ../../failedTests/$testTypeDir
+		else
+			cd ../failedTests/$testTypeDir
+		fi
+
 		find . -size 0 -delete
+
 		#expected output comared
 		cd ../../input/$testTypeDir
 	done
