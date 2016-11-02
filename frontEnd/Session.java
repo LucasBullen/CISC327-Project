@@ -68,7 +68,7 @@ class Session {
 		// alpha-numeric characters and spaces.
 		String regex = "^[a-zA-Z0-9][a-zA-Z0-9 ]{1,28}[a-zA-Z0-9]$";
 		if (!inputString.matches(regex)){
-			System.out.println("Incorrect account name format. " + addText);
+			System.out.println("Incorrect account name format (3 to 30 characters, no leading or trailing spaces)." + addText);
 			return false;
 		}
 		return true;
@@ -85,7 +85,7 @@ class Session {
 		// long consisting only of numeric characters.
 		String regex = "\\d{3,8}";
 		if (!inputString.matches(regex)){
-			System.out.println("Incorrect amount format. " + addText);
+			System.out.println("Amount is not a proper number. " + addText);
 			return false;
 		}  else if (user.equals("atm") && Integer.parseInt(inputString) > 100000) {
 			System.out.println("Limit exceeded. " + addText);
@@ -167,22 +167,22 @@ class Session {
 		String accountName = "";
 
 		if (!user.equals("agent")){
-			System.out.println("Cannot access create feature in atm mode.");
+			System.out.println("Cannot access delete feature in atm mode.");
 			return;
 		}
 
 		System.out.println("Enter account number to delete.");
 		inputString = scan.nextLine();
-		if (!checkAccountNumber(inputString, failedText)) {
+		if (!checkAccountNumber(inputString, "")) {
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account doesn't exists. Delete cancelled.");
+			System.out.println("Account does not exists. Delete cancelled.");
 			return;
 		}
 		accountNumber = inputString;
 		System.out.println("Enter name of account to delete.");
 		inputString = scan.nextLine();
-		if (!checkAccountName(inputString, failedText)) {
+		if (!checkAccountName(inputString, faifledText)) {
 			return;
 		}
 		accountName = inputString;
@@ -206,18 +206,18 @@ class Session {
 		String accountNumber = "";
 		String depositAmount = "";
 
-		System.out.println("Enter account number to deposit to.");
+		System.out.println("Enter number of account to deposit into.");
 		inputString = scan.nextLine();
 
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
-			System.out.println("Account doesn't exists. Deposit cancelled.");
+			System.out.println("Account does not exists. Deposit cancelled.");
 			return;
 		}
 
 		accountNumber = inputString;
-		System.out.println("Enter amount to deposit.");
+		System.out.println("Enter amount(in cents) to deposit.");
 		inputString = scan.nextLine();
 
 		if (!checkAmount(inputString, failedText)){
