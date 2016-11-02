@@ -220,6 +220,17 @@ class Session {
 		System.out.println("Enter amount(in cents) to deposit.");
 		inputString = scan.nextLine();
 
+		String regexIsNumber = "\\d*";
+		if(inputString.matches(regexIsNumber)){
+			if (user.equals("agent") && Integer.parseInt(inputString) > 99999999){
+				System.out.println("Deposit above $999,999.99 limit. " + failedText);
+				return;
+			}else if (user.equals("atm") && Integer.parseInt(inputString) > 100000){
+				System.out.println("Deposit above $1000.00 limit. " + failedText);
+				return;
+			}
+		}
+
 		if (!checkAmount(inputString, failedText)){
 			return;
 		}
@@ -254,6 +265,17 @@ class Session {
 		accountNumber = inputString;
 		System.out.println("Enter amount to withdraw.");
 		inputString = scan.nextLine();
+
+		String regexIsNumber = "\\d*";
+		if(inputString.matches(regexIsNumber)){
+			if (user.equals("agent") && Integer.parseInt(inputString) > 99999999){
+				System.out.println("Withdraw above $999,999.99 limit. " + failedText);
+				return;
+			}else if (user.equals("atm") && Integer.parseInt(inputString) > 100000){
+				System.out.println("Withdraw above $1,000.00 limit. " + failedText);
+				return;
+			}
+		}
 
 		if (!checkAmount(inputString, failedText)){
 			return;

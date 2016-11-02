@@ -1,2 +1,0 @@
-5d4
-< Unrecognized command. Remember all commands must be in lowercase.

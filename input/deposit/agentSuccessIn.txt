@@ -2,7 +2,7 @@ login
 agent
 deposit
 12345678
-50
+050
 logout
 quit
 

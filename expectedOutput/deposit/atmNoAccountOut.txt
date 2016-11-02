@@ -1,5 +1,5 @@
 Select mode: atm or agent.
 Logged into atm mode.
 Enter number of account to deposit into.
-Account does not exist. Deposit cancelled.
+Incorrect account number format (8 digits, no leading zeros). Deposit cancelled.
 Logged out.
