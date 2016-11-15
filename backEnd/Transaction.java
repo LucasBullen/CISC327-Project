@@ -1,4 +1,4 @@
-public class Transaction {
+public abstract class Transaction {
     private String type;
     private String sourceAccount;
     private String targetAccount;
@@ -8,10 +8,10 @@ public class Transaction {
     public Transaction(String data) {
         String[] tokens = data.split(" ");
         this.type = tokens[0];
-        this.sourceAccount = token[1];
-        this.targetAccount = token[2];
-        this.amount = Integer.parseInt(token[3]);
-        this.sourceName = token[4];
+        this.sourceAccount = tokens[1];
+        this.targetAccount = tokens[2];
+        this.amount = Integer.parseInt(tokens[3]);
+        this.sourceName = tokens[4];
     }
 
     public String getType() {
