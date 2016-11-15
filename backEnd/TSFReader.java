@@ -4,7 +4,5 @@ public class TSFReader {
 
     public TSFReader(String name) {
         this.name = name;
-    }
-
-    
+    }    
 }
