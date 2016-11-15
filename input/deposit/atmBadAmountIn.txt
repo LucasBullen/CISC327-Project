@@ -1,8 +1,0 @@
-login
-atm
-deposit
-12345678
-aouhoofn
-logout
-quit
-

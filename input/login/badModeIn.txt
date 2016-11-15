@@ -1,4 +1,0 @@
-login
-bad
-quit
-

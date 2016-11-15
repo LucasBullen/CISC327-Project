@@ -1,1 +1,0 @@
-Unrecognized command. Remember all commands must be in lowercase.

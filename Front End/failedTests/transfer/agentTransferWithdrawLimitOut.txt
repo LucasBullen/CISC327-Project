@@ -1,0 +1,8 @@
+6c6
+<  Enter number of account to deposit into.
+---
+> Enter number of account to transfer from.
+9c9
+< Transfer successful.
+---
+> Transfer amount exceed amount in source account. Transfer cancelled.

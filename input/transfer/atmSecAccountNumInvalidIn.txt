@@ -1,8 +1,0 @@
-login
-atm
-transfer
-12345678
-aidfnoasnf
-logout
-quit
-

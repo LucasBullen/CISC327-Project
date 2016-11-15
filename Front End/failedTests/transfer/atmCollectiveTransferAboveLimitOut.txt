@@ -1,0 +1,15 @@
+9c9
+<  Enter number of account to deposit into.
+---
+> Enter number of account to transfer from.
+12,13c12,14
+< Transfer successful.
+<  Enter number of account to deposit into.
+---
+> Trasfer successful.
+> transfer
+> Enter number of account to transfer from.
+16c17
+< Session withdraw maximum exceeded. Transfer cancelled.
+---
+> Transfer above $1000.00 limit. Transfer cancelled.

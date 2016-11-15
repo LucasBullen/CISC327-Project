@@ -1,0 +1,8 @@
+login
+agent
+deposit
+12345678
+100000000
+logout
+quit
+

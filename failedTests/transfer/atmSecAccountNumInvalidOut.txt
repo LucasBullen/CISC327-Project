@@ -1,8 +1,0 @@
-3c3
-<  Enter number of account to deposit into.
----
-> Enter number of account to transfer from.
-5c5
-< Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
----
-> Account number does not exist. Transfer cancelled.

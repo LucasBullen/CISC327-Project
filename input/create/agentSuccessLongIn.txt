@@ -1,8 +1,0 @@
-login
-agent
-create
-11111111
-12345678 012345 7890123 567890
-logout
-quit
-

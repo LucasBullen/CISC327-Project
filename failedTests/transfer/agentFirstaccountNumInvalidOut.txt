@@ -1,4 +1,0 @@
-4c4
-< Incorrect account number format (8 digits, no leading zeros). Transfer cancelled.
----
-> Account does not exist. Transfer cancelled.

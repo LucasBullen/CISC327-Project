@@ -1,0 +1,9 @@
+login
+agent
+transfer
+12345678
+87654321
+100000000
+logout
+quit
+
