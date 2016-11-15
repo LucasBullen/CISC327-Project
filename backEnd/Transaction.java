@@ -1,9 +1,9 @@
 public abstract class Transaction {
-    private String type;
-    private String sourceAccount;
-    private String targetAccount;
-    private Integer amount;
-    private String sourceName;
+    protected String type;
+    protected String sourceAccount;
+    protected String targetAccount;
+    protected Integer amount;
+    protected String sourceName;
 
     public Transaction(String data) {
         String[] tokens = data.split(" ");
@@ -32,5 +32,9 @@ public abstract class Transaction {
 
     public String getSourceName() {
         return this.sourceName;
+    }
+
+    public Boolean apply() {
+        return false;
     }
 }
