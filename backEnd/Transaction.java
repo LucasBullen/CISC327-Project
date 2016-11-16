@@ -1,3 +1,7 @@
+/**
+* Abstract class that defines the behaviour of all transaction classes.
+* Create, Delete, Deposit, Withdraw, Transfer transactions extend this class.
+*/
 public abstract class Transaction {
     protected String type;
     protected String sourceAccount;
@@ -5,6 +9,10 @@ public abstract class Transaction {
     protected Integer amount;
     protected String sourceName;
 
+    /**
+    * Constructor
+    * @param data the TSF line to parse in format "XX XXXXXXXX XXXXXXXX XXXX XXXX"
+    */
     public Transaction(String data) {
         String[] tokens = data.split(" ");
         this.type = tokens[0];
@@ -14,27 +22,49 @@ public abstract class Transaction {
         this.sourceName = tokens[4];
     }
 
+    /**
+    * Getter for transaction type (eg. CR, DL)
+    * @return the 2-letter code for this transaction's type
+    */
     public String getType() {
         return this.type;
     }
 
+    /**
+    * Getter for the source account for this transaction.
+    * @return the 8-digit account number
+    */
     public String getSourceAccount() {
         return this.sourceAccount;
     }
 
+    /**
+    * Getter for the destination/target account for this transaction.
+    * @return the 8-digit account number
+    */
     public String getTargetAccount() {
         return this.targetAccount;
     }
 
+    /**
+    * Getter for the amount of this transaction.
+    * @return the amount of this transaction in cents.
+    */
     public Integer getAmount() {
         return this.amount;
     }
 
+    /**
+    * Getter for the name of the source account for this transaction.
+    * @return the name of the account
+    */
     public String getSourceName() {
         return this.sourceName;
     }
 
-    public Boolean apply() {
-        return false;
-    }
+    /**
+    * Abstract apply method that is extended by each transaction type differently
+    * @return true if the apply function succeeds
+    */
+    abstract Boolean apply();
 }

@@ -1,6 +1,12 @@
+/**
+* This class is the 'main' class responsible for taking in commandline
+* arguments for the Masters Acccount File, Merged Transaction Summary File,
+* New Masters Account File, and new Valid Accounts List file names
+*/
 public class BackEnd {
-
-    //java BackEnd MAF.txt TSF.txt MAF2.txt VAL.txt
+    /**
+    * Callable from commandline with format java BackEnd MAF.txt TSF.txt MAF2.txt VAL.txt
+    */
     public static void main(String[] args) {
         if(args.length != 4){
             System.out.println("Incorrect parameters.");
