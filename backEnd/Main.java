@@ -87,5 +87,8 @@ public class Main {
 
         account = MAF.getAccount("11163111");
         System.out.println(account);
+
+        MAF.generateValidAccountList("ValidAccountsList.txt");
+        MAF.sortAccounts("MasterAccountsList");
     }
 }
