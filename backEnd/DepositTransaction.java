@@ -8,7 +8,10 @@ public class DepositTransaction extends Transaction {
         if (account == null) {
             System.out.println("deposit failed");
             return false;
-        } else {
+        }else if(account.getAccountBalance() + this.amount > 99999999) {
+            System.out.println("deposit failed");
+            return false;
+        }else {
             account.setAccountBalance(account.getAccountBalance() + this.amount);
             MAF.setAccount(this.sourceAccount, account);
             return true;
