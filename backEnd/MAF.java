@@ -41,7 +41,7 @@ public final class MAF {
 		return true;
     }
 
-    public static void sortAccounts(String fileName) {
+    public static void generateMasterAccountsList(String fileName) {
         ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
@@ -56,7 +56,7 @@ public final class MAF {
         writeToFile(fileName, accountNumberList);
     }
 
-    public static void generateValidAccountList(String fileName) {
+    public static void generateValidAccountsList(String fileName) {
         ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 

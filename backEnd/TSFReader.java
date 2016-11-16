@@ -35,7 +35,7 @@ public class TSFReader {
         } else if (type.equals("WD")) {
             return new WithdrawTransaction(line);
         } else if (type.equals("TR")) {
-            return new TransactionTransaction(line);
+            return new TransferTransaction(line);
         } else if (type.equals("ES")) {
             return null;
         }
