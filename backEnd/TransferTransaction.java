@@ -1,16 +1,20 @@
-public class DepositTransaction extends Transaction {
-    public DepositTransaction(String data) {
+public class TransferTransaction extends Transaction {
+    public TransferTransaction(String data) {
         super(data);
     }
 
     public Boolean apply() {
-        Account account = MAF.getAccount(this.sourceAccount);
-        if (account == null) {
-            System.out.println("deposit failed");
+        Account transferFrom = MAF.getAccount(this.sourceAccount);
+        Account transferTo = MAF.getAccount(this.targetAccount);
+
+        if (transferFrom == null || transferTo == null || transferFrom.getAccountBalance() < this.amount) {
+            System.out.println("transfer failed");
             return false;
         } else {
-            account.setAccountBalance(account.getAccountBalance() + this.amount);
-            MAF.setAccount(this.sourceAccount, account);
+            transferFrom.setAccountBalance(transferFrom.getAccountBalance() - this.amount);
+            transferTo.setAccountBalance(transferTo.getAccountBalance() + this.amount);
+            MAF.setAccount(this.sourceAccount, transferFrom);
+            MAF.setAccount(this.targetAccount, transferTo);
             return true;
         }
     }

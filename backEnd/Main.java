@@ -25,10 +25,20 @@ public class Main {
         account = MAF.getAccount("11163111");
         System.out.println(account);
 
+        System.out.println("Create");
         Transaction transaction = new CreateTransaction("CR 11163111 00000000 000 GRANT");
         transaction.apply();
 
         account = MAF.getAccount("11163111");
+
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getAccountName());
+        System.out.println(account.getAccountBalance());
+
+        transaction = new CreateTransaction("CR 11113111 00000000 000 DAN");
+        transaction.apply();
+
+        account = MAF.getAccount("11113111");
 
         System.out.println(account.getAccountNumber());
         System.out.println(account.getAccountName());
@@ -49,6 +59,23 @@ public class Main {
         transaction.apply();
 
         account = MAF.getAccount("11163111");
+
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getAccountName());
+        System.out.println(account.getAccountBalance());
+
+        System.out.println("transfer");
+
+        transaction = new TransferTransaction("TR 11163111 11113111 333 ***");
+        transaction.apply();
+
+        account = MAF.getAccount("11163111");
+
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getAccountName());
+        System.out.println(account.getAccountBalance());
+
+        account = MAF.getAccount("11113111");
 
         System.out.println(account.getAccountNumber());
         System.out.println(account.getAccountName());
