@@ -49,4 +49,8 @@ public final class MAF {
     public static Account getAccount(String accountNumber) {
         return accounts.get(accountNumber);
     }
+
+    public static void deleteAccount(String accountNumber) {
+        accounts.remove(accountNumber);
+    }
 }

@@ -29,9 +29,36 @@ public class Main {
         transaction.apply();
 
         account = MAF.getAccount("11163111");
-        
+
         System.out.println(account.getAccountNumber());
         System.out.println(account.getAccountName());
         System.out.println(account.getAccountBalance());
+
+        System.out.println("Deposit:");
+
+        account = MAF.getAccount("11163111");
+
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getAccountName());
+        System.out.println(account.getAccountBalance());
+
+        transaction = new DepositTransaction("DE 11163111 00000000 111 ***");
+        transaction.apply();
+
+        transaction = new DepositTransaction("DE 11163111 00000000 222 ***");
+        transaction.apply();
+
+        account = MAF.getAccount("11163111");
+
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getAccountName());
+        System.out.println(account.getAccountBalance());
+
+        System.out.println("Delete:");
+        transaction = new DeleteTransaction("DL 11163111 00000000 000 GRANT");
+        transaction.apply();
+
+        account = MAF.getAccount("11163111");
+        System.out.println(account);
     }
 }

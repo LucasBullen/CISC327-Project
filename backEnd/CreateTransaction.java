@@ -9,6 +9,7 @@ public class CreateTransaction extends Transaction {
              MAF.setAccount(this.sourceAccount, account);
              return true;
          } else {
+             System.out.println("create failed");
              return false;
          }
     }

@@ -20,4 +20,8 @@ public class Account {
     public Integer getAccountBalance() {
         return this.accountBalance;
     }
+
+    public void setAccountBalance(Integer balance) {
+        this.accountBalance = balance;
+    }
 }
