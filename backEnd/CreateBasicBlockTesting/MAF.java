@@ -31,24 +31,33 @@ public final class MAF {
     * @return true if loaded successfully
     */
     public static Boolean load(String fileName) {
+        System.out.println("BLOCK: 11 (MAF load)");
         try {
+            System.out.println("BLOCK: 12 (MAF load try)");
             br = new BufferedReader(new FileReader(fileName));
         } catch(IOException e) {
+            System.out.println("BLOCK: 13 (MAF load catch)");
             System.out.println("ERROR: " + fileName + " is not a file.");
             System.exit(1);
         }
+        System.out.println("BLOCK: 14 (MAF post try)");
         accounts = new HashMap<String, Account>();
 
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
+            System.out.println("BLOCK: 15 (MAF try two)");
       		stream.forEach(line -> {
+                System.out.println("BLOCK: 16 (MAF foreach)");
                 String[] parse = parseLine(line);
                 Account account = new Account(parse[0], parse[2], Integer.parseInt(parse[1]));
                 accounts.put(parse[0], account);
             });
+            System.out.println("BLOCK: 17 (MAF post foreach)");
 		} catch(IOException e) {
+            System.out.println("BLOCK: 18 (MAF catch two)");
 			System.out.println("ERROR: Unable to read file " + fileName + ".");
       System.exit(1);
 		}
+        System.out.println("BLOCK: 19 (MAF catch two)");
 
 		return true;
     }
@@ -60,14 +69,17 @@ public final class MAF {
     * @return true if the write was successful
     */
     public static Boolean generateMasterAccountsList(String fileName) {
+        System.out.println("BLOCK: 20 (generateMasterAccountsList)");
         ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
+            System.out.println("BLOCK: 21 (generateMasterAccountsList for loop)");
             accountNumberList.add(accountList.get(i).getAccountNumber() + " " +
                                   accountList.get(i).getAccountBalance()  + " " +
                                   accountList.get(i).getAccountName());
         }
+        System.out.println("BLOCK: 22 (generateMasterAccountsList post loop)");
 
         Collections.sort(accountNumberList);
 
@@ -81,12 +93,15 @@ public final class MAF {
     * @return true if the write was successful
     */
     public static Boolean generateValidAccountsList(String fileName) {
+        System.out.println("BLOCK: 23 (generateValidAccountsList)");
         ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
+            System.out.println("BLOCK: 24 (generateValidAccountsList for loop)");
             accountNumberList.add(accountList.get(i).getAccountNumber() + "");
         }
+        System.out.println("BLOCK: 25 (generateValidAccountsList post for loop)");
 
         return writeToFile(fileName, accountNumberList);
     }
@@ -99,14 +114,18 @@ public final class MAF {
     * @return true if the write was successful
     */
     private static Boolean writeToFile(String fileName, ArrayList<String> lines){
+        System.out.println("BLOCK: 26 (writeToFile)");
         Path file = Paths.get(fileName);
 
         try {
-			      Files.write(file, lines, Charset.forName("UTF-8"));
+                System.out.println("BLOCK: 27 (writeToFile try)");
+			    Files.write(file, lines, Charset.forName("UTF-8"));
 		    } catch (IOException e) {
+                System.out.println("BLOCK: 28 (writeToFile catch)");
 		        System.out.println("ERROR: Unable to write to file " + fileName + ".");
             System.exit(1);
 		    }
+        System.out.println("BLOCK: 29 (writeToFile post try)");
         return true;
     }
 
@@ -116,6 +135,7 @@ public final class MAF {
     * @return the split line
     */
     private static String[] parseLine(String line){
+        System.out.println("BLOCK: 30 (parseLine)");
         return line.split(" ");
     }
 
@@ -125,6 +145,7 @@ public final class MAF {
     * @param account the new account to store at this location in the hashmap
     */
     public static void setAccount(String accountNumber, Account account) {
+        System.out.println("BLOCK: 31 (setAccount)");
         accounts.put(accountNumber, account);
     }
 
@@ -134,6 +155,7 @@ public final class MAF {
     * @return account stored at specified account number, or null if account does not exists
     */
     public static Account getAccount(String accountNumber) {
+        System.out.println("BLOCK: 32 (getAccount)");
         return accounts.get(accountNumber);
     }
 
