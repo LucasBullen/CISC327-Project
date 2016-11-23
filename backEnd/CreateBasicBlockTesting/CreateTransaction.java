@@ -20,7 +20,9 @@ public class CreateTransaction extends Transaction {
         System.out.println("BLOCK: 8 (CreateTransaction apply)");
         if (MAF.getAccount(this.sourceAccount) == null) {
             System.out.println("BLOCK: 9 (CreateTransaction, if)");
-            Account account = new Account(this.sourceAccount, this.sourceName, 0);
+            Account account = new Account(this.sourceAccount,
+                                          this.sourceName,
+                                          0);
             MAF.setAccount(this.sourceAccount, account);
             return true;
         } else {

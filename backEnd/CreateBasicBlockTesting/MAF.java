@@ -48,7 +48,9 @@ public final class MAF {
       		stream.forEach(line -> {
                 System.out.println("BLOCK: 16 (MAF foreach)");
                 String[] parse = parseLine(line);
-                Account account = new Account(parse[0], parse[2], Integer.parseInt(parse[1]));
+                Account account = new Account(parse[0],
+                                              parse[2],
+                                              Integer.parseInt(parse[1]));
                 accounts.put(parse[0], account);
             });
             System.out.println("BLOCK: 17 (MAF post foreach)");
@@ -70,13 +72,15 @@ public final class MAF {
     */
     public static Boolean generateMasterAccountsList(String fileName) {
         System.out.println("BLOCK: 20 (generateMasterAccountsList)");
-        ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
+        ArrayList<Account> accountList
+            = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
-            System.out.println("BLOCK: 21 (generateMasterAccountsList for loop)");
+            System.out.println("BLOCK: 21 "
+                             + "(generateMasterAccountsList for loop)");
             accountNumberList.add(accountList.get(i).getAccountNumber() + " " +
-                                  accountList.get(i).getAccountBalance()  + " " +
+                                  accountList.get(i).getAccountBalance() + " " +
                                   accountList.get(i).getAccountName());
         }
         System.out.println("BLOCK: 22 (generateMasterAccountsList post loop)");
@@ -94,14 +98,17 @@ public final class MAF {
     */
     public static Boolean generateValidAccountsList(String fileName) {
         System.out.println("BLOCK: 23 (generateValidAccountsList)");
-        ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
+        ArrayList<Account> accountList
+            = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
-            System.out.println("BLOCK: 24 (generateValidAccountsList for loop)");
+            System.out.println("BLOCK: 24 "
+                               + "(generateValidAccountsList for loop)");
             accountNumberList.add(accountList.get(i).getAccountNumber() + "");
         }
-        System.out.println("BLOCK: 25 (generateValidAccountsList post for loop)");
+        System.out.println("BLOCK: 25 "
+                           + "(generateValidAccountsList post for loop)");
 
         return writeToFile(fileName, accountNumberList);
     }
@@ -113,7 +120,8 @@ public final class MAF {
     * @param lines    desired file contents.
     * @return true if the write was successful
     */
-    private static Boolean writeToFile(String fileName, ArrayList<String> lines){
+    private static Boolean writeToFile(String fileName,
+                                       ArrayList<String> lines) {
         System.out.println("BLOCK: 26 (writeToFile)");
         Path file = Paths.get(fileName);
 
@@ -122,7 +130,9 @@ public final class MAF {
 			    Files.write(file, lines, Charset.forName("UTF-8"));
 		    } catch (IOException e) {
                 System.out.println("BLOCK: 28 (writeToFile catch)");
-		        System.out.println("ERROR: Unable to write to file " + fileName + ".");
+		        System.out.println("ERROR: Unable to write to file "
+                                   + fileName
+                                   + ".");
             System.exit(1);
 		    }
         System.out.println("BLOCK: 29 (writeToFile post try)");

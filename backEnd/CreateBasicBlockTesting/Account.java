@@ -16,7 +16,9 @@ public class Account {
     * @param accountName    the name of the account holder
     * @param accountBalance the number of cents in the account
     */
-    public Account(String accountNumber, String accountName, Integer accountBalance) {
+    public Account(String accountNumber,
+                   String accountName,
+                   Integer accountBalance) {
         System.out.println("BLOCK: 6 (account constructor)");
         this.accountNumber = accountNumber;
         this.accountName = accountName;
