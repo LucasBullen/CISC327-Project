@@ -13,6 +13,7 @@ public class BackEnd {
             System.out.println("Incorrect parameters.");
             System.exit(0);
         }
+        System.out.println("propermainargcount");
         String old_MAF_name = args[0];
         String tsf_name = args[1];
         String new_MAF_name = args[2];
