@@ -28,7 +28,6 @@ public abstract class Transaction {
     * @return the 2-letter code for this transaction's type
     */
     public String getType() {
-        System.out.println("BLOCK: 34 (Transaction getType)");
         return this.type;
     }
 
@@ -37,7 +36,6 @@ public abstract class Transaction {
     * @return the 8-digit account number
     */
     public String getSourceAccount() {
-        System.out.println("BLOCK: 35 (Transaction getSourceAccount)");
         return this.sourceAccount;
     }
 
@@ -62,7 +60,6 @@ public abstract class Transaction {
     * @return the name of the account
     */
     public String getSourceName() {
-        System.out.println("BLOCK: 36 (Transaction getSourceName)");
         return this.sourceName;
     }
 

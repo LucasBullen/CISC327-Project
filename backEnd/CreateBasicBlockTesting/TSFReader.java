@@ -16,14 +16,14 @@ public class TSFReader {
     * @param name the name of the file to open
     */
     public TSFReader(String name) {
-        System.out.println("BLOCK: 37 (TSFReader constructor)");
+        System.out.println("BLOCK: 34 (TSFReader constructor)");
         this.name = name;
         try{
-            System.out.println("BLOCK: 38 (TSFReader try)");
+            System.out.println("BLOCK: 35 (TSFReader try)");
             this.br = new BufferedReader(new FileReader(this.name));
         }
         catch(FileNotFoundException ex){
-            System.out.println("BLOCK: 39 (TSFReader catch)");
+            System.out.println("BLOCK: 36 (TSFReader catch)");
             System.out.println("ERROR: " + name + " is not a file.");
             System.exit(1);
         }
@@ -35,21 +35,21 @@ public class TSFReader {
     * @return the parsed line as a Transaction.
     */
     public Transaction nextTransaction() {
-        System.out.println("BLOCK: 40 (nextTransaction)");
+        System.out.println("BLOCK: 37 (nextTransaction)");
         String line;
         try{
-            System.out.println("BLOCK: 41 (nextTransaction try)");
+            System.out.println("BLOCK: 38 (nextTransaction try)");
             line = this.br.readLine();
         }
         catch(IOException ex){
-            System.out.println("BLOCK: 42 (nextTransaction catch)");
+            System.out.println("BLOCK: 39 (nextTransaction catch)");
             return null;
         }
-        System.out.println("BLOCK: 43 (nextTransaction post try)");
+        System.out.println("BLOCK: 40 (nextTransaction post try)");
         String type = line.substring(0,2);
 
         if (type.equals("CR")) {
-            System.out.println("BLOCK: 44 (nextTransaction if create)");
+            System.out.println("BLOCK: 41 (nextTransaction if create)");
             return new CreateTransaction(line);
         } else if (type.equals("DE")) {
             return new DeleteTransaction(line);

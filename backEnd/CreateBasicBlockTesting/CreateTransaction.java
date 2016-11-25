@@ -8,8 +8,8 @@ public class CreateTransaction extends Transaction {
     * @param data the line from a TSF in the form "CR XXXXXXXX 00000000 000 XXXX"
     */
     public CreateTransaction(String data) {
-        System.out.println("BLOCK: 7 (CreateTransaction constructor)");
         super(data);
+        System.out.println("BLOCK: 7 (CreateTransaction constructor)");
     }
 
     /**

@@ -1,0 +1,3 @@
+BLOCK: 1 (begin main)
+BLOCK: 2 (wrong args count)
+Incorrect parameters.

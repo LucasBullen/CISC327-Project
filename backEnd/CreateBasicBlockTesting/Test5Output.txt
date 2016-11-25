@@ -1,0 +1,6 @@
+BLOCK: 1 (begin main)
+BLOCK: 3 (main post if)
+BLOCK: 11 (MAF load)
+BLOCK: 12 (MAF load try)
+BLOCK: 13 (MAF load catch)
+ERROR: NotReadableFile.txt is not a file.
