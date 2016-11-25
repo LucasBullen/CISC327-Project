@@ -18,11 +18,11 @@ public class WithdrawTransaction extends Transaction {
     public Boolean apply() {
         Account account = MAF.getAccount(this.sourceAccount);
         if (account == null) {
-            System.out.printlb("accountNull");
+            System.out.println("accountNull");
             System.out.println("withdraw failed: account does not exist");
             return false;
         }else if(account.getAccountBalance() - this.amount < 0) {
-            System.out.printlb("accountBalanceTooSmall");
+            System.out.println("accountBalanceTooSmall");
             System.out.println("withdraw failed: account balance insufficient");
             return false;
         }else {
