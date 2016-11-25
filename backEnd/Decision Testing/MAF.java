@@ -48,7 +48,7 @@ public final class MAF {
                 accounts.put(parse[0], account);
             });
 		} catch(IOException e) {
-            System.out.printlb("loadCantReadFileCatch");
+            System.out.println("loadCantReadFileCatch");
 			System.out.println("ERROR: Unable to read file " + fileName + ".");
       System.exit(1);
 		}
@@ -67,15 +67,15 @@ public final class MAF {
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
-            System.out.printlb("for");
+            System.out.println("for");
             accountNumberList.add(accountList.get(i).getAccountNumber() + " " +
                                   accountList.get(i).getAccountBalance()  + " " +
                                   accountList.get(i).getAccountName());
         }
-        System.out.printlb("no for");
+        System.out.println("no for");
         Collections.sort(accountNumberList);
 
-        return File(fileName, accountNumberList);
+        return writeToFile(fileName, accountNumberList);
     }
 
     /**
@@ -89,10 +89,10 @@ public final class MAF {
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
-            System.out.printlb("infor");
+            System.out.println("infor");
             accountNumberList.add(accountList.get(i).getAccountNumber() + "");
         }
-        System.out.printlb("nofor");
+        System.out.println("nofor");
         return writeToFile(fileName, accountNumberList);
     }
 
