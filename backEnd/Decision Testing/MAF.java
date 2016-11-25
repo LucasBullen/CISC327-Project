@@ -44,7 +44,9 @@ public final class MAF {
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
       		stream.forEach(line -> {
                 String[] parse = parseLine(line);
-                Account account = new Account(parse[0], parse[2], Integer.parseInt(parse[1]));
+                Account account = new Account(parse[0],
+                                              parse[2],
+                                              Integer.parseInt(parse[1]));
                 accounts.put(parse[0], account);
             });
 		} catch(IOException e) {
@@ -63,13 +65,14 @@ public final class MAF {
     * @return true if the write was successful
     */
     public static Boolean generateMasterAccountsList(String fileName) {
-        ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
+        ArrayList<Account> accountList
+            = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
             System.out.println("for");
             accountNumberList.add(accountList.get(i).getAccountNumber() + " " +
-                                  accountList.get(i).getAccountBalance()  + " " +
+                                  accountList.get(i).getAccountBalance() + " " +
                                   accountList.get(i).getAccountName());
         }
         System.out.println("no for");
@@ -85,7 +88,8 @@ public final class MAF {
     * @return true if the write was successful
     */
     public static Boolean generateValidAccountsList(String fileName) {
-        ArrayList<Account> accountList = new ArrayList<Account>(accounts.values());
+        ArrayList<Account> accountList
+            = new ArrayList<Account>(accounts.values());
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
@@ -103,17 +107,20 @@ public final class MAF {
     * @param lines    desired file contents.
     * @return true if the write was successful
     */
-    private static Boolean writeToFile(String fileName, ArrayList<String> lines){
+    private static Boolean writeToFile(String fileName,
+                                       ArrayList<String> lines) {
         Path file = Paths.get(fileName);
 
         try {
-			      Files.write(file, lines, Charset.forName("UTF-8"));
-		    } catch (IOException e) {
-                System.out.println("tsfReaderNotFileCatch");
-		        System.out.println("ERROR: Unable to write to file " + fileName + ".");
+			Files.write(file, lines, Charset.forName("UTF-8"));
+		} catch (IOException e) {
+            System.out.println("tsfReaderNotFileCatch");
+		    System.out.println("ERROR: Unable to write to file "
+                               + fileName
+                               + ".");
             System.exit(1);
-		    }
-            System.out.println("nocatch");
+		}
+        System.out.println("nocatch");
         return true;
     }
 
