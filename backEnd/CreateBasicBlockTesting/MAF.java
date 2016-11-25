@@ -57,7 +57,7 @@ public final class MAF {
 		} catch(IOException e) {
             System.out.println("BLOCK: 18 (MAF catch two)");
 			System.out.println("ERROR: Unable to read file " + fileName + ".");
-      System.exit(1);
+            System.exit(1);
 		}
         System.out.println("BLOCK: 19 (MAF post catch two)");
 
