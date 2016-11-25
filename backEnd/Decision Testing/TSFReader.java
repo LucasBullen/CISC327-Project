@@ -21,6 +21,7 @@ public class TSFReader {
             this.br = new BufferedReader(new FileReader(this.name));
         }
         catch(FileNotFoundException ex){
+            System.out.println("tsfReaderNoCatch");
             System.out.println("ERROR: " + name + " is not a file.");
             System.exit(1);
         }
@@ -37,8 +38,10 @@ public class TSFReader {
             line = this.br.readLine();
         }
         catch(IOException ex){
+            System.out.println("nextTransReadlineExCatch");
             return null;
         }
+        System.out.println("nextTransNoCatch");
         String type = line.substring(0,2);
 
         if (type.equals("CR")) {
@@ -46,6 +49,7 @@ public class TSFReader {
         } else if (type.equals("DE")) {
             return new DeleteTransaction(line);
         } else if (type.equals("WD")) {
+            System.out.println("nextTransIfWithdraw");
             return new WithdrawTransaction(line);
         } else if (type.equals("TR")) {
             return new TransferTransaction(line);

@@ -34,9 +34,11 @@ public final class MAF {
         try {
             br = new BufferedReader(new FileReader(fileName));
         } catch(IOException e) {
+            System.out.println("loadNotFIleCatch");
             System.out.println("ERROR: " + fileName + " is not a file.");
             System.exit(1);
         }
+        System.out.println("loadNoCatch1");
         accounts = new HashMap<String, Account>();
 
 		try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
@@ -46,10 +48,11 @@ public final class MAF {
                 accounts.put(parse[0], account);
             });
 		} catch(IOException e) {
+            System.out.printlb("loadCantReadFileCatch");
 			System.out.println("ERROR: Unable to read file " + fileName + ".");
       System.exit(1);
 		}
-
+        System.out.println("loadNoCatch2");
 		return true;
     }
 
@@ -64,11 +67,12 @@ public final class MAF {
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
+            System.out.printlb("for");
             accountNumberList.add(accountList.get(i).getAccountNumber() + " " +
                                   accountList.get(i).getAccountBalance()  + " " +
                                   accountList.get(i).getAccountName());
         }
-
+        System.out.printlb("no for");
         Collections.sort(accountNumberList);
 
         return File(fileName, accountNumberList);
@@ -85,9 +89,10 @@ public final class MAF {
         ArrayList<String> accountNumberList = new ArrayList<String>();
 
         for (int i = 0; i < accountList.size(); i++) {
+            System.out.printlb("infor");
             accountNumberList.add(accountList.get(i).getAccountNumber() + "");
         }
-
+        System.out.printlb("nofor");
         return writeToFile(fileName, accountNumberList);
     }
 
@@ -104,9 +109,11 @@ public final class MAF {
         try {
 			      Files.write(file, lines, Charset.forName("UTF-8"));
 		    } catch (IOException e) {
+                System.out.println("tsfReaderNotFileCatch");
 		        System.out.println("ERROR: Unable to write to file " + fileName + ".");
             System.exit(1);
 		    }
+            System.out.println("nocatch");
         return true;
     }
 

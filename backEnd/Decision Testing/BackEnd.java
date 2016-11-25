@@ -9,6 +9,7 @@ public class BackEnd {
     */
     public static void main(String[] args) {
         if(args.length != 4){
+            System.out.println("mainArgCount");
             System.out.println("Incorrect parameters.");
             System.exit(0);
         }
@@ -21,9 +22,11 @@ public class BackEnd {
         TSFReader tsf = new TSFReader(tsf_name);
         Transaction transaction = tsf.nextTransaction();
         while(transaction != null){
+            System.out.println("whiletransNotNULL");
             transaction.apply();
             transaction = tsf.nextTransaction();
         }
+        System.out.println("whiletransNull");
         MAF.generateValidAccountsList(new_VAL_name);
         MAF.generateMasterAccountsList(new_MAF_name);
     }
