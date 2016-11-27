@@ -1,4 +1,0 @@
-3c3
-<  Enter number of account to deposit into.
----
-> Enter number of account to transfer from.

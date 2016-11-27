@@ -1,6 +1,0 @@
-login
-atm
-Withdraw
-logout
-quit
-

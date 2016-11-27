@@ -1,4 +1,0 @@
-loadNoCatch1
-loadNoCatch2
-tsfReaderNoCatch
-ERROR: notafile is not a file.

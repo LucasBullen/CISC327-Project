@@ -1,6 +1,0 @@
-login
-agent
-logout
-delete
-quit
-

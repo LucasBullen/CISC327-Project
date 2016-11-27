@@ -1,6 +1,0 @@
-login
-atm
-DEPOSIT
-logout
-quit
-

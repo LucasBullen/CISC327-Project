@@ -1,7 +1,0 @@
-java BackEnd MAFEmpty.txt TSF.txt MAF2.txt VAL.txt
-java BackEnd
-java BackEnd MAF.txt TSF.txt MAF2.txt VAL.txt
-java BackEnd NotRealFile.txt TSF.txt MAF2.txt VAL.txt
-java BackEnd NotReadableFile.txt TSF.txt MAF2.txt VAL.txt
-java BackEnd MAFEmpty.txt TSF.txt NotWriteableFile.txt VAL.txt
-java BackEnd MAFEmpty.txt NotRealFile.txt MAF2.txt VAL.txt

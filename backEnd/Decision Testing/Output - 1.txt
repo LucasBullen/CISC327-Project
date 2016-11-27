@@ -1,3 +1,0 @@
-propermainargcount
-loadNotFIleCatch
-ERROR: notarealfile is not a file.

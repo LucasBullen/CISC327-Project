@@ -1,7 +1,0 @@
-Select mode: atm or agent.
-Logged into atm mode.
- Enter number of account to deposit into.
-Enter number of account to transfer to.
-Enter amount (in cents) to transfer.
-Amount is not a proper number. Transfer cancelled.
-Logged out.

@@ -1,8 +1,0 @@
-login
-agent
-create
-11111111
-1234567890123456789012345678901
-logout
-quit
-

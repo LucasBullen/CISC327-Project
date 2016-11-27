@@ -1,7 +1,0 @@
-login
-agent
-delete
-12222222
-logout
-quit
-

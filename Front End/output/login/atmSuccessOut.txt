@@ -1,3 +1,0 @@
-Select mode: atm or agent.
-Logged into atm mode.
-Logged out.

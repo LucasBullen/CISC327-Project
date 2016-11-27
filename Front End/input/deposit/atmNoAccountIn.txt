@@ -1,7 +1,0 @@
-login
-atm
-deposit
-asinfoai139unao
-logout
-quit
-

@@ -1,4 +1,0 @@
-Select mode: atm or agent.
-Logged into atm mode.
-Enter number of account to transfer from.
-Logged out.

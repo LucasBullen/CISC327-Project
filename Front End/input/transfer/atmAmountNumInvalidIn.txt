@@ -1,9 +1,0 @@
-login
-atm
-transfer
-12345678
-87654321
-adfoan
-logout
-quit
-

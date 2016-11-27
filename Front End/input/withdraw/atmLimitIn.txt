@@ -1,8 +1,0 @@
-login
-atm
-withdraw
-12345678
-100001
-logout
-quit
-
