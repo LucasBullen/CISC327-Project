@@ -18,6 +18,7 @@ public class DeleteTransaction extends Transaction {
     */
     public Boolean apply() {
         Account account = MAF.getAccount(this.sourceAccount);
+        System.out.println("DELETE BACK END: account.getAccountName():"+account.getAccountName()+" this.sourceName:"+this.sourceName);
         if (account == null) {
             System.out.println("delete failed: account does not exist");
             return false;
@@ -25,6 +26,7 @@ public class DeleteTransaction extends Transaction {
             System.out.println("delete failed: account name does not match");
             return false;
         } else {
+            System.out.println("All goose");
             MAF.deleteAccount(account.getAccountNumber());
             return true;
         }

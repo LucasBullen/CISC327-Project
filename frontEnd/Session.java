@@ -208,7 +208,7 @@ class Session {
 
 		System.out.println("Enter number of account to deposit into.");
 		inputString = scan.nextLine();
-
+		System.out.println("THE NUMBER:"+inputString);
 		if (!checkAccountNumber(inputString, failedText)){
 			return;
 		} else if (accountsList.search(inputString) == -1){
