@@ -1,5 +1,5 @@
 login
-atm
+agent
 deposit
 11111111
 50000
