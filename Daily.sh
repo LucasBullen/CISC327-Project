@@ -1,4 +1,7 @@
-# TODO: direct to main directory
+# Testing script to simulate a days worth of transactions to
+# the banking system
+
+# Parameters
 VAL=$1
 TS1=$2
 TS2=$3
@@ -9,18 +12,17 @@ nVAL=$7
 nTS=$8
 
 mv ${VAL}.txt frontEnd/VAL.txt
-echo "*****Front End: One*****"
 cd frontEnd
+#add quit command to end of TS documents to exit the program
 echo quit >> ../${TS1}
+#run the days script
 java Main VAL holdTSF1 < ../${TS1}
+#remove the quit command to revert the TS document to start state
 sed '$d' < ../${TS1} > hold ; mv hold ../${TS1}
-
-echo "*****Front End: Two*****"
 
 echo quit >> ../${TS2}
 java Main VAL holdTSF2 < ../${TS2}
 sed '$d' < ../${TS2} > hold ; mv hold ../${TS2}
-echo "*****Front End: Three*****"
 
 echo quit >> ../${TS3}
 java Main VAL holdTSF3 < ../${TS3}
@@ -33,7 +35,7 @@ mv frontEnd/holdTSF2.txt holdTSF2.txt
 mv frontEnd/holdTSF3.txt holdTSF3.txt
 mv frontEnd/VAL.txt ${VAL}.txt
 
-
+#concatenate all the TSF into one document to give to backend
 sed '$d' < holdTSF1.txt > hold ; mv hold holdTSF1.txt
 cat holdTSF1.txt > holdTSF.txt
 sed '$d' < holdTSF2.txt > hold ; mv hold holdTSF2.txt
@@ -41,12 +43,10 @@ cat holdTSF2.txt >> holdTSF.txt
 cat holdTSF3.txt >> holdTSF.txt
 cp holdTSF.txt "${nTS}"
 
-#back office
-
+#run the back office
 mv $MAF backEnd/MAF.txt
 mv holdTSF.txt backEnd/TSF.txt
 
-echo "*****Back End*****"
 cd backEnd
 java BackEnd MAF.txt TSF.txt nMAF.txt nVAL.txt
 cd ../
@@ -56,6 +56,7 @@ mv backEnd/TSF.txt holdTSF.txt
 mv backEnd/nMAF.txt $nMAF
 mv backEnd/nVAL.txt $nVAL
 
+#remove hold files
 rm holdTSF.txt
 rm holdTSF1.txt
 rm holdTSF2.txt

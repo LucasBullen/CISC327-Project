@@ -16,8 +16,6 @@ public abstract class Transaction {
     */
     public Transaction(String data) {
         String[] tokens = data.split(" ");
-        System.out.println("BACKEND TRANSACTION tokens:");
-        System.out.println(Arrays.toString(tokens));
         this.type = tokens[0];
         this.sourceAccount = tokens[1];
         this.targetAccount = tokens[2];
