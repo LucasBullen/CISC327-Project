@@ -1,0 +1,5 @@
+login
+deposit
+11111111
+49999999
+logout

@@ -1,0 +1,15 @@
+login
+atm
+deposit
+11111111
+50000
+deposit
+11111112
+50000
+deposit
+11111113
+50000
+create
+11111116
+name6
+logout

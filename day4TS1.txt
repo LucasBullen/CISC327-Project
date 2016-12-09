@@ -1,0 +1,12 @@
+login
+deposit
+11111111
+100
+transfer
+11111113
+11111111
+100
+withdraw
+11111112
+10000
+logout

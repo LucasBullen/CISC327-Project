@@ -1,0 +1,9 @@
+login
+agent
+create
+11111115
+new name 5
+deposit
+11111111
+49950000
+logout
