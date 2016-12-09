@@ -36,7 +36,7 @@ cat TSF1.txt > TSF.txt
 sed '$d' < TSF2.txt > hold ; mv hold TSF2.txt
 cat TSF2.txt >> TSF.txt
 cat TSF3.txt >> TSF.txt
-cat TSF.txt >> $nTS
+cat TSF.txt >| "${nTS}"
 
 #back office
 
