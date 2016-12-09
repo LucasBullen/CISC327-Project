@@ -43,8 +43,10 @@ public class TSFReader {
 
         if (type.equals("CR")) {
             return new CreateTransaction(line);
-        } else if (type.equals("DE")) {
+        } else if (type.equals("DL")) {
             return new DeleteTransaction(line);
+        } else if (type.equals("DE")) {
+            return new DepositTransaction(line);
         } else if (type.equals("WD")) {
             return new WithdrawTransaction(line);
         } else if (type.equals("TR")) {

@@ -23,6 +23,9 @@ public abstract class Transaction {
         this.targetAccount = tokens[2];
         this.amount = Integer.parseInt(tokens[3]);
         this.sourceName = tokens[4];
+        for(int i = 5; i<tokens.length; i++){
+            this.sourceName = this.sourceName + " " + tokens[i];
+        }
     }
 
     /**
