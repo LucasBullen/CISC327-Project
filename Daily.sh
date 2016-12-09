@@ -6,6 +6,7 @@ TS3=$4
 MAF=$5
 nMAF=$6
 nVAL=$7
+nTS=$8
 
 mv ${VAL}.txt frontEnd/VAL.txt
 
@@ -35,7 +36,7 @@ cat TSF1.txt > TSF.txt
 sed '$d' < TSF2.txt > hold ; mv hold TSF2.txt
 cat TSF2.txt >> TSF.txt
 cat TSF3.txt >> TSF.txt
-
+cat TSF.txt >> $nTS
 #back office
 
 mv $MAF backEnd/MAF.txt
