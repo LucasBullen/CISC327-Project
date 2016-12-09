@@ -9,15 +9,18 @@ nVAL=$7
 nTS=$8
 
 mv ${VAL}.txt frontEnd/VAL.txt
-
+echo "*****Front End: One*****"
 cd frontEnd
 echo quit >> ../${TS1}
 java Main VAL holdTSF1 < ../${TS1}
 sed '$d' < ../${TS1} > hold ; mv hold ../${TS1}
 
+echo "*****Front End: Two*****"
+
 echo quit >> ../${TS2}
 java Main VAL holdTSF2 < ../${TS2}
 sed '$d' < ../${TS2} > hold ; mv hold ../${TS2}
+echo "*****Front End: Three*****"
 
 echo quit >> ../${TS3}
 java Main VAL holdTSF3 < ../${TS3}
@@ -43,6 +46,7 @@ cp holdTSF.txt "${nTS}"
 mv $MAF backEnd/MAF.txt
 mv holdTSF.txt backEnd/TSF.txt
 
+echo "*****Back End*****"
 cd backEnd
 java BackEnd MAF.txt TSF.txt nMAF.txt nVAL.txt
 cd ../
