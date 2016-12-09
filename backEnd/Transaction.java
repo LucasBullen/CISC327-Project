@@ -2,6 +2,7 @@
 * Abstract class that defines the behaviour of all transaction classes.
 * Create, Delete, Deposit, Withdraw, Transfer transactions extend this class.
 */
+import java.util.Arrays;
 public abstract class Transaction {
     protected String type;
     protected String sourceAccount;
@@ -15,6 +16,8 @@ public abstract class Transaction {
     */
     public Transaction(String data) {
         String[] tokens = data.split(" ");
+        System.out.println("BACKEND TRANSACTION tokens:");
+        System.out.println(Arrays.toString(tokens));
         this.type = tokens[0];
         this.sourceAccount = tokens[1];
         this.targetAccount = tokens[2];
