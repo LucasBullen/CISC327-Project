@@ -1,7 +1,7 @@
-chmod u+x Daily.sh
+#chmod u+x Daily.sh
 
-echo "" >| MAF.txt
-echo "" >| VAL.txt
+>| MAF.txt
+>| VAL.txt
 
 for i in `seq 1 1`;
 do
@@ -12,6 +12,6 @@ do
     # ./Daily.sh VAL day1TS1.txt  day1TS2.txt day1TS3.txt MAF.txt nMAF.txt nVAL.txt
     ./Daily.sh VAL $TS1 $TS2 $TS3 MAF.txt nMAF${i}.txt nVAL${i}.txt TSF${i}.txt
 
-    cp nMAF${i}.txt MAF.txt
-    cp nVAL${i}.txt VAL
+    #cp nMAF${i}.txt MAF.txt
+    #cp nVAL${i}.txt VAL
 done
