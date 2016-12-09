@@ -1,7 +1,7 @@
 >| MAF.txt
 >| VAL.txt
 
-for i in `seq 1 2`;
+for i in `seq 1 5`;
 do
     TS1="day"$i"TS1.txt"
     TS2="day"$i"TS2.txt"
