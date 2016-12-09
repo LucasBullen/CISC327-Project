@@ -1,15 +1,6 @@
 login
 agent
 deposit
-11111115
-1000
-withdraw
-11111115
-1000
-delete
-11111115
-name5
-deposit
 11111116
 1000
 withdraw
