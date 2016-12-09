@@ -1,5 +1,8 @@
 chmod u+x Daily.sh
 
+echo "" >| MAF.txt
+echo "" >| VAL.txt
+
 for i in `seq 1 1`;
 do
     TS1="day"$i"TS1.txt"
