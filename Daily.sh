@@ -52,7 +52,6 @@ mv backEnd/TSF.txt TSF.txt
 mv backEnd/nMAF.txt $nMAF
 mv backEnd/nVAL.txt $nVAL
 
-rm VAL.txt
 rm TSF.txt
 rm TSF1.txt
 rm TSF2.txt
