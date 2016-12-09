@@ -25,6 +25,9 @@ public class DeleteTransaction extends Transaction {
         } else if (!account.getAccountName().equals(this.sourceName)) {
             System.out.println("delete failed: account name does not match");
             return false;
+        } else if (!(account.getAccountBalance() == 0)) {
+            System.out.println("delete failed: account balance is not zero");
+            return false;
         } else {
             System.out.println("All goose");
             MAF.deleteAccount(account.getAccountNumber());
